@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color: #bbf898;
+}
+
+h1{
+    background-color: #1e4c5a;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: #1e4c5a;
+}
+
+.choices{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+
+}
+
+#userScore , #compScore{
+   font-size: 4rem;
+}
+
+.msgContainer{
+    margin-top: 4rem;
+}
+#msg{
+    padding: 0.5rem;
+    display: inline;
+    background-color: #1e4c5a;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+@media screen and ( max-width :500px){
+    .h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choice{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choices{
+        margin-top: 6rem;
+        gap: 1.20rem;
+    }
+
+    .choice:hover{
+        cursor: pointer;
+        background-color: #091d33;
+    }    
+
+
+    img{
+        height: 90px;
+        width: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    #msg{
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .msgContainer{
+        margin-top: 6rem;
+    }
+
+    .scoreboard{
+        margin-top: 4rem;
+    }
+}
